@@ -25,3 +25,4 @@
   - Ход работы: [./local/build_client.ipynb](local/build_client.ipynb)
   - Входные файлы:
     - [./local/test_images/*](local/test_images)
+    - `/tmp/tfsrver/models/my_model/*`
