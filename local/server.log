@@ -1,0 +1,27 @@
+2024-05-24 16:13:18.572175: I tensorflow_serving/model_servers/server.cc:77] Building single TensorFlow model file config:  model_name: my_model model_base_path: /tmp/tfsrver/models/my_model/
+2024-05-24 16:13:18.572828: I tensorflow_serving/model_servers/server_core.cc:471] Adding/updating models.
+2024-05-24 16:13:18.573044: I tensorflow_serving/model_servers/server_core.cc:600]  (Re-)adding model: my_model
+2024-05-24 16:13:18.777354: I tensorflow_serving/core/basic_manager.cc:740] Successfully reserved resources to load servable {name: my_model version: 1}
+2024-05-24 16:13:18.777699: I tensorflow_serving/core/loader_harness.cc:68] Approving load for servable version {name: my_model version: 1}
+2024-05-24 16:13:18.780413: I tensorflow_serving/core/loader_harness.cc:76] Loading servable version {name: my_model version: 1}
+2024-05-24 16:13:18.780899: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /tmp/tfsrver/models/my_model/1
+2024-05-24 16:13:18.781977: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:51] Reading meta graph with tags { serve }
+2024-05-24 16:13:18.782171: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:146] Reading SavedModel debug info (if present) from: /tmp/tfsrver/models/my_model/1
+2024-05-24 16:13:18.820590: I external/org_tensorflow/tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-05-24 16:13:18.821757: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:234] Restoring SavedModel bundle.
+2024-05-24 16:13:18.859200: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:218] Running initialization op on SavedModel bundle at path: /tmp/tfsrver/models/my_model/1
+2024-05-24 16:13:18.868018: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:317] SavedModel load for tags { serve }; Status: success: OK. Took 87119 microseconds.
+2024-05-24 16:13:18.868614: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:82] No warmup data file found at /tmp/tfsrver/models/my_model/1/assets.extra/tf_serving_warmup_requests
+2024-05-24 16:13:18.976343: I tensorflow_serving/core/loader_harness.cc:97] Successfully loaded servable version {name: my_model version: 1}
+2024-05-24 16:13:18.977982: I tensorflow_serving/model_servers/server_core.cc:492] Finished adding/updating models
+2024-05-24 16:13:18.979283: I tensorflow_serving/model_servers/server.cc:121] Using InsecureServerCredentials
+2024-05-24 16:13:18.979720: I tensorflow_serving/model_servers/server.cc:388] Profiler service is enabled
+2024-05-24 16:13:18.980450: I tensorflow_serving/model_servers/server.cc:423] Running gRPC ModelServer at 0.0.0.0:8500 ...
+[evhttp_server.cc : 250] NET_LOG: Entering the event loop ...
+2024-05-24 16:13:18.981882: I tensorflow_serving/model_servers/server.cc:444] Exporting HTTP/REST API at:localhost:8501 ...
+2024-05-24 16:14:01.743557: W external/org_tensorflow/tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: FAILED_PRECONDITION: Could not find variable sequential/dense_1/bias. This could mean that the variable has been deleted. In TF1, it can also mean the variable is uninitialized. Debug info: container=localhost, status error message=Resource localhost/sequential/dense_1/bias/N10tensorflow3VarE does not exist.
+	 [[{{function_node __inference_serving_default_53751}}{{node sequential_1/dense_1_2/Add/ReadVariableOp}}]]
+2024-05-24 16:14:01.754261: W external/org_tensorflow/tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: ABORTED: Stopping remaining executors.
+2024-05-24 16:14:04.965165: W external/org_tensorflow/tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: FAILED_PRECONDITION: Could not find variable sequential/dense_1/bias. This could mean that the variable has been deleted. In TF1, it can also mean the variable is uninitialized. Debug info: container=localhost, status error message=Resource localhost/sequential/dense_1/bias/N10tensorflow3VarE does not exist.
+	 [[{{function_node __inference_serving_default_53751}}{{node sequential_1/dense_1_2/Add/ReadVariableOp}}]]
+2024-05-24 16:14:04.985030: W external/org_tensorflow/tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: ABORTED: Stopping remaining executors.
