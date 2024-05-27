@@ -46,4 +46,4 @@
     - [./custom_server/server_models/my_model/*](custom_server/server_models/my_model)
   - Выходные файлы:
     - [./custom_server/client.py](custom_server/client.py)
-    - [./custom_server/server.py](server_models/my_model)
+    - [./custom_server/server.py](custom_server/server.py)
