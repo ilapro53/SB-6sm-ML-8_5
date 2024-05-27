@@ -27,7 +27,7 @@
     - [./local/test_images/*](local/test_images)
     - `/tmp/tfsrver/models/my_model/*`
 
-> :warning: При выполнения запроса к серверу возникает ошибка (последняя ячейка [build_client.ipynb](local/build_client.ipynb))
+> :warning: При выполнении запроса к серверу возникает ошибка (последняя ячейка [build_client.ipynb](local/build_client.ipynb))
 > ```
 > Could not find variable dense/bias. This could mean that the variable has been deleted. In TF1, it can also mean the variable is uninitialized. Debug info: container=localhost, status error message=Resource localhost/dense/bias/N10tensorflow3VarE does not exist.\n\t [[{{function_node __inference_serving_default_577}}{{node sequential_1/dense_1/Add/ReadVariableOp}}]]
 > ```
@@ -47,3 +47,7 @@
   - Выходные файлы:
     - [./custom_server/client.py](custom_server/client.py)
     - [./custom_server/server.py](custom_server/server.py)
+
+> ✔️ Клиент и сервер взаимодействуют без ошибок (последняя ячейка [build_client.ipynb](custom_server/build_client.ipynb))
+
+>  ℹ️  Однако точность модели не очень хорошая (возможно это происходит из-за неправильной трансформации изображений при подготовке тестовых данных или при перед инференсом на сервере)
