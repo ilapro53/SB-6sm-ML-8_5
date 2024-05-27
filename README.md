@@ -43,4 +43,7 @@
     - [./custom_server/build_client.ipynb](custom_server/build_client.ipynb)
   - Входные файлы:
     - [./custom_server/test_images/*](custom_server/test_images)
-    - [./server_models/my_model/*](server_models/my_model)
+    - [./custom_server/server_models/my_model/*](custom_server/server_models/my_model)
+  - Выходные файлы:
+    - [./custom_server/client.py](custom_server/client.py)
+    - [./custom_server/server.py](server_models/my_model)
